@@ -22,7 +22,7 @@ if st.button("Analyze"):
         st.metric("Scam Probability", f"{prob:.2%}")
         if prob > 0.7:
             st.error("⚠️ High risk of scam.")
-        elif prob > 0.4:
+        elif prob > 0.5:
             st.warning("⚠️ Might be suspicious.")
         else:
             st.success("✅ Likely legitimate.")
